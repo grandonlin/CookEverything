@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A867971DE7AAF0F4ECFFBD37 /* Pods_CookEverything.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888B38BAF561B713B5D80BA1 /* Pods_CookEverything.framework */; };
 		C15B49E31FF72D5E0033E495 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B49E21FF72D5E0033E495 /* AppDelegate.swift */; };
 		C15B49E51FF72D5E0033E495 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B49E41FF72D5E0033E495 /* ViewController.swift */; };
 		C15B49E81FF72D5E0033E495 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15B49E61FF72D5E0033E495 /* Main.storyboard */; };
 		C15B49EA1FF72D5E0033E495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15B49E91FF72D5E0033E495 /* Assets.xcassets */; };
 		C15B49ED1FF72D5E0033E495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15B49EB1FF72D5E0033E495 /* LaunchScreen.storyboard */; };
+		C15B49F81FF7321A0033E495 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C15B49F71FF7321A0033E495 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		888B38BAF561B713B5D80BA1 /* Pods_CookEverything.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CookEverything.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0B688D1E982CEF8C0C472F /* Pods-CookEverything.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookEverything.release.xcconfig"; path = "Pods/Target Support Files/Pods-CookEverything/Pods-CookEverything.release.xcconfig"; sourceTree = "<group>"; };
 		C15B49DF1FF72D5E0033E495 /* CookEverything.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookEverything.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15B49E21FF72D5E0033E495 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C15B49E41FF72D5E0033E495 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		C15B49E91FF72D5E0033E495 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C15B49EC1FF72D5E0033E495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C15B49EE1FF72D5E0033E495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15B49F71FF7321A0033E495 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA677EA2D1952FBA735ECBDB /* Pods-CookEverything.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CookEverything.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CookEverything/Pods-CookEverything.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A867971DE7AAF0F4ECFFBD37 /* Pods_CookEverything.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18F010D3DEEEF6D08CA14FF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA677EA2D1952FBA735ECBDB /* Pods-CookEverything.debug.xcconfig */,
+				BA0B688D1E982CEF8C0C472F /* Pods-CookEverything.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95884A4D61082D7F0590DD69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				888B38BAF561B713B5D80BA1 /* Pods_CookEverything.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C15B49D61FF72D5E0033E495 = {
 			isa = PBXGroup;
 			children = (
 				C15B49E11FF72D5E0033E495 /* CookEverything */,
 				C15B49E01FF72D5E0033E495 /* Products */,
+				18F010D3DEEEF6D08CA14FF3 /* Pods */,
+				95884A4D61082D7F0590DD69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,39 @@
 		C15B49E11FF72D5E0033E495 /* CookEverything */ = {
 			isa = PBXGroup;
 			children = (
+				C15B49F61FF72F1A0033E495 /* Model */,
+				C15B49F51FF72F160033E495 /* View */,
+				C15B49F41FF72F0F0033E495 /* Controller */,
 				C15B49E21FF72D5E0033E495 /* AppDelegate.swift */,
-				C15B49E41FF72D5E0033E495 /* ViewController.swift */,
 				C15B49E61FF72D5E0033E495 /* Main.storyboard */,
 				C15B49E91FF72D5E0033E495 /* Assets.xcassets */,
 				C15B49EB1FF72D5E0033E495 /* LaunchScreen.storyboard */,
 				C15B49EE1FF72D5E0033E495 /* Info.plist */,
+				C15B49F71FF7321A0033E495 /* GoogleService-Info.plist */,
 			);
 			path = CookEverything;
+			sourceTree = "<group>";
+		};
+		C15B49F41FF72F0F0033E495 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C15B49E41FF72D5E0033E495 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C15B49F51FF72F160033E495 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C15B49F61FF72F1A0033E495 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C15B49F11FF72D5E0033E495 /* Build configuration list for PBXNativeTarget "CookEverything" */;
 			buildPhases = (
+				5C282630C6D8434DEF22E2E8 /* [CP] Check Pods Manifest.lock */,
 				C15B49DB1FF72D5E0033E495 /* Sources */,
 				C15B49DC1FF72D5E0033E495 /* Frameworks */,
 				C15B49DD1FF72D5E0033E495 /* Resources */,
+				96CA1E1A3D413BBC0301A783 /* [CP] Embed Pods Frameworks */,
+				2E4186E0C5AD54A2A2C9F35C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +179,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15B49ED1FF72D5E0033E495 /* LaunchScreen.storyboard in Resources */,
+				C15B49F81FF7321A0033E495 /* GoogleService-Info.plist in Resources */,
 				C15B49EA1FF72D5E0033E495 /* Assets.xcassets in Resources */,
 				C15B49E81FF72D5E0033E495 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E4186E0C5AD54A2A2C9F35C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookEverything/Pods-CookEverything-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C282630C6D8434DEF22E2E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96CA1E1A3D413BBC0301A783 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CookEverything/Pods-CookEverything-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C15B49DB1FF72D5E0033E495 /* Sources */ = {
@@ -259,6 +362,7 @@
 		};
 		C15B49F21FF72D5E0033E495 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA677EA2D1952FBA735ECBDB /* Pods-CookEverything.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UM5SX26C6N;
@@ -272,6 +376,7 @@
 		};
 		C15B49F31FF72D5E0033E495 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0B688D1E982CEF8C0C472F /* Pods-CookEverything.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UM5SX26C6N;
